@@ -12,7 +12,9 @@
       "Bash(curl -L -o public/images/blog-1.jpg \"https://picsum.photos/id/180/700/500\")",
       "Bash(curl -L -o public/images/blog-2.jpg \"https://picsum.photos/id/60/700/500\")",
       "Bash(curl -L -o public/images/blog-3.jpg \"https://picsum.photos/id/1076/700/500\")",
-      "Bash(curl -L -o public/images/blog-4.jpg \"https://picsum.photos/id/119/700/500\")"
+      "Bash(curl -L -o public/images/blog-4.jpg \"https://picsum.photos/id/119/700/500\")",
+      "Bash(curl -L -o \"f:/VIBECODING/MARSCIMINI/public/images/hero-2.jpg\" \"https://images.pexels.com/photos/5587294/pexels-photo-5587294.jpeg?auto=compress&cs=tinysrgb&w=1920\")",
+      "Bash(curl -L -o \"f:/VIBECODING/MARSCIMINI/public/images/hero-3.jpg\" \"https://images.pexels.com/photos/10549886/pexels-photo-10549886.jpeg?auto=compress&cs=tinysrgb&w=1920\")"
     ],
     "additionalDirectories": [
       "f:\\VIBECODING\\MARSCIMINI\\src\\app",

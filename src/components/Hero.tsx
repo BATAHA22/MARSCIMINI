@@ -1,21 +1,56 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { useState, useEffect, useCallback } from 'react';
+
+const slides = [
+  '/images/hero.jpg',
+  '/images/hero-2.jpg',
+  '/images/hero-3.jpg',
+];
 
 export default function Hero() {
   const t = useTranslations('hero');
+  const [current, setCurrent] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const goTo = useCallback(
+    (index: number) => {
+      if (isTransitioning || index === current) return;
+      setIsTransitioning(true);
+      setCurrent(index);
+      setTimeout(() => setIsTransitioning(false), 800);
+    },
+    [current, isTransitioning]
+  );
+
+  // Auto-advance every 6 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0">
-        <img
-          src="/images/hero.jpg"
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/50" />
-      </div>
+      {/* Slide images */}
+      {slides.map((src, i) => (
+        <div
+          key={src}
+          className="absolute inset-0 transition-opacity duration-[800ms] ease-in-out"
+          style={{ opacity: i === current ? 1 : 0 }}
+        >
+          <img
+            src={src}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
+      ))}
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-32 pb-20">
@@ -57,19 +92,19 @@ export default function Hero() {
       </div>
 
       {/* Slide dots */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center gap-3">
-        <button
-          className="w-2.5 h-2.5 rounded-full bg-white/25 transition-colors hover:bg-white/50"
-          aria-label="Slide 1"
-        />
-        <button
-          className="w-2.5 h-2.5 rounded-full bg-white/25 transition-colors hover:bg-white/50"
-          aria-label="Slide 2"
-        />
-        <button
-          className="w-3.5 h-3.5 rounded-full border-2 border-primary bg-transparent"
-          aria-label="Slide 3 (active)"
-        />
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center gap-3 z-10">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goTo(i)}
+            aria-label={`Slide ${i + 1}`}
+            className={`rounded-full transition-all duration-300 ${
+              i === current
+                ? 'w-3.5 h-3.5 border-2 border-primary bg-transparent'
+                : 'w-2.5 h-2.5 bg-white/25 hover:bg-white/50'
+            }`}
+          />
+        ))}
       </div>
     </section>
   );

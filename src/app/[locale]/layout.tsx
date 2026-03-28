@@ -4,6 +4,7 @@ import { getMessages } from 'next-intl/server';
 import { DM_Sans, Cairo } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 import '../globals.css';
 
 const dmSans = DM_Sans({
@@ -45,6 +46,7 @@ export default async function LocaleLayout({
           <Header />
           {children}
           <Footer />
+          <WhatsAppButton />
         </NextIntlClientProvider>
       </body>
     </html>
