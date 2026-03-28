@@ -68,7 +68,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section id="services" className="bg-surface py-24 lg:py-32">
+    <section id="about" className="bg-surface py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 mb-16">

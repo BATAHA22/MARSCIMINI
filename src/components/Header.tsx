@@ -1,11 +1,12 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useState, useEffect } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const t = useTranslations('header');
+  const locale = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -16,11 +17,11 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { label: t('home'), href: '#' },
-    { label: t('about'), href: '#about' },
-    { label: t('services'), href: '#services' },
-    { label: t('blog'), href: '#blog' },
-    { label: t('contact'), href: '#contact' },
+    { label: t('home'), href: `/${locale}` },
+    { label: t('about'), href: `/${locale}#about` },
+    { label: t('services'), href: `/${locale}/services` },
+    { label: t('blog'), href: `/${locale}#blog` },
+    { label: t('contact'), href: `/${locale}/contact` },
   ];
 
   return (
@@ -78,7 +79,7 @@ export default function Header() {
             <LanguageSwitcher />
 
             <a
-              href="tel:+95002120988"
+              href="tel:+971582637334"
               className="hidden sm:flex items-center gap-3"
             >
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0">

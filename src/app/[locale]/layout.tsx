@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { DM_Sans, Cairo } from 'next/font/google';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import '../globals.css';
 
 const dmSans = DM_Sans({
@@ -40,7 +42,9 @@ export default async function LocaleLayout({
         } antialiased text-navy`}
       >
         <NextIntlClientProvider messages={messages}>
+          <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
