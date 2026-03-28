@@ -1,0 +1,69 @@
+{
+  "header": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "phone": "9 500 212 09 88"
+  },
+  "hero": {
+    "subtitle": "VOTRE PARTENAIRE COMMERCIAL",
+    "title1": "Solutions de",
+    "title2": "Commerce Global",
+    "description": "Nous connectons les entreprises du monde entier avec des solutions d'import-export fiables, garantissant qualité et prix compétitifs. Plus de 500 partenaires nous font confiance.",
+    "cta": "Voir notre portfolio"
+  },
+  "whyUs": {
+    "subtitle": "POURQUOI NOUS",
+    "title": "Un partenaire de confiance pour vos besoins commerciaux",
+    "description": "Nous fournissons des solutions commerciales complètes garantissant qualité, fiabilité et prix compétitifs. Planifiez un appel d'introduction de 15 minutes.",
+    "card1Title": "Gestion logistique import & export",
+    "card2Title": "Approvisionnement diversifié et chaîne d'approvisionnement",
+    "card3Title": "Conformité et assurance qualité",
+    "readMore": "En savoir plus"
+  },
+  "faq": {
+    "subtitle": "INFORMATIONS UTILES",
+    "title": "Questions Fréquemment Posées",
+    "q1": "Quels types de produits commercialisez-vous ?",
+    "a1": "Nous traitons une gamme diversifiée de produits, y compris les matières premières, les équipements industriels, les biens de consommation et les produits agricoles sur les marchés mondiaux.",
+    "q2": "Comment assurez-vous la qualité des produits ?",
+    "a2": "Nous mettons en œuvre des processus rigoureux de contrôle qualité, incluant des inspections d'usine, des tests tiers et une vérification de conformité à chaque étape.",
+    "q3": "Quelles sont vos capacités en expédition et logistique ?",
+    "a3": "Nous offrons des solutions logistiques complètes incluant le fret maritime, aérien et terrestre avec suivi en temps réel et assistance au dédouanement.",
+    "q4": "Travaillez-vous avec les PME ?",
+    "a4": "Absolument. Nous proposons des solutions commerciales évolutives adaptées aux entreprises de toutes tailles, des startups aux grandes entreprises.",
+    "q5": "Comment puis-je établir un partenariat avec votre entreprise ?",
+    "a5": "Contactez-nous simplement via notre formulaire ou appelez-nous directement. Nous planifierons une consultation pour comprendre vos besoins."
+  },
+  "blog": {
+    "subtitle": "NOTRE BLOG",
+    "title": "Actualités & Perspectives",
+    "category1": "LOGISTIQUE",
+    "category2": "MARCHÉS",
+    "category3": "PARTENAIRES",
+    "category4": "STRATÉGIE",
+    "post1Title": "Les chaînes d'approvisionnement mondiales s'adaptent aux demandes évolutives",
+    "post1Date": "14 octobre 2024 | 20h59",
+    "post2Title": "L'impact croissant des salons commerciaux internationaux",
+    "post2Date": "10 septembre 2024 | 20h00",
+    "post3Title": "Ce que les partenaires attendent des sociétés de commerce à l'ère numérique",
+    "post3Date": "10 septembre 2024 | 19h59",
+    "post4Title": "Construire des fondations numériques solides pour le commerce moderne",
+    "post4Date": "5 août 2024 | 19h48"
+  },
+  "footer": {
+    "description": "Votre partenaire de confiance dans le commerce mondial. Connecter les entreprises aux opportunités partout dans le monde.",
+    "quickLinks": "Liens rapides",
+    "services": "Services",
+    "contactInfo": "Coordonnées",
+    "importExport": "Import & Export",
+    "supplyChain": "Chaîne d'approvisionnement",
+    "qualityControl": "Contrôle qualité",
+    "consulting": "Conseil",
+    "address": "123 Centre Commercial, Quartier des Affaires",
+    "email": "info@marscimini.com",
+    "rights": "Tous droits réservés."
+  }
+}

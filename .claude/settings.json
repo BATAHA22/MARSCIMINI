@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find f:/VIBECODING/MARSCIMINI/ -type f -name *.json -o -name *.md -o -name package*)",
+      "Read(//f/VIBECODING/**)",
+      "Read(//f/VIBECODING/Mefara/**)",
+      "Read(//f/VIBECODING/RAFIK/**)",
+      "Bash(find f:/VIBECODING/MARSCIMINI/ -name .* -o -type f)",
+      "Bash(grep -v \"^f:/VIBECODING/MARSCIMINI/$\")",
+      "Bash(dir /a \"f:\\\\VIBECODING\\\\MARSCIMINI\"\")",
+      "Bash(curl -L -o public/images/hero.jpg \"https://picsum.photos/id/1067/1920/1080\")",
+      "Bash(curl -L -o public/images/blog-1.jpg \"https://picsum.photos/id/180/700/500\")",
+      "Bash(curl -L -o public/images/blog-2.jpg \"https://picsum.photos/id/60/700/500\")",
+      "Bash(curl -L -o public/images/blog-3.jpg \"https://picsum.photos/id/1076/700/500\")",
+      "Bash(curl -L -o public/images/blog-4.jpg \"https://picsum.photos/id/119/700/500\")"
+    ],
+    "additionalDirectories": [
+      "f:\\VIBECODING\\MARSCIMINI\\src\\app",
+      "f:\\VIBECODING\\MARSCIMINI\\src\\app\\[locale]"
+    ]
+  }
+}
